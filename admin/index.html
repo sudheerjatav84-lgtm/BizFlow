@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="BizFlow Business Management Dashboard"
+    >
+
+    <title>BizFlow - Owner Dashboard</title>
+
+    <link
+        rel="stylesheet"
+        href="/admin/dashboard.css"
+    >
+</head>
+
+<body>
+
+    <div class="app-shell">
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <div class="brand">
+
+                <div class="brand-mark">
+                    B
+                </div>
+
+                <div class="brand-text">
+                    <strong>BizFlow</strong>
+                    <span>Business Platform</span>
+                </div>
+
+            </div>
+
+
+            <nav class="main-nav">
+
+                <a
+                    href="#overview"
+                    class="nav-item active"
+                >
+        <span class="nav-icon">&#9679;</span>
+                    <span>Overview</span>
+                </a>
+
+
+                <a
+                    href="#business"
+                    class="nav-item"
+                >
+        <span class="nav-icon">&#9679;</span>
+                    <span>Businesses</span>
+                </a>
+
+
+                <a
+                    href="#website"
+                    class="nav-item"
+                >
+        <span class="nav-icon">&#9679;</span>
+                    <span>Website</span>
+                </a>
+
+
+                <a
+                    href="#payments"
+                    class="nav-item"
+                >
+        <span class="nav-icon">&#9679;</span>
+                    <span>Payments</span>
+                </a>
+
+
+                <a
+                    href="#customers"
+                    class="nav-item"
+                >
+        <span class="nav-icon">&#9679;</span>
+                    <span>Customers</span>
+                </a>
+
+
+                <a
+                    href="#activity"
+                    class="nav-item"
+                >
+        <span class="nav-icon">&#9679;</span>
+                    <span>Activity</span>
+                </a>
+
+            </nav>
+
+
+            <div class="sidebar-bottom">
+
+                <a
+                    href="#security"
+                    class="nav-item"
+                >
+        <span class="nav-icon">&#9679;</span>
+                    <span>Security</span>
+                </a>
+
+
+                <a
+                    href="#settings"
+                    class="nav-item"
+                >
+        <span class="nav-icon">&#9679;</span>
+                    <span>Settings</span>
+                </a>
+
+
+                <button
+                    type="button"
+                    class="visit-store"
+                    id="visitStore"
+                >
+        <span class="nav-icon">&#9679;</span>
+                    Visit Store
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN -->
+
+        <main class="main-content">
+
+            <!-- TOP BAR -->
+
+            <header class="topbar">
+
+                <div class="mobile-brand">
+
+                    <div class="brand-mark">
+                        B
+                    </div>
+
+                    <strong>BizFlow</strong>
+
+                </div>
+
+
+                <div class="search-box">
+
+                        <span>&#9679;</span>
+
+                    <input
+                        type="search"
+                        placeholder="Search your workspace..."
+                        aria-label="Search"
+                    >
+
+                </div>
+
+
+                <div class="topbar-actions">
+
+                    <button
+                        type="button"
+                        class="icon-button"
+                        aria-label="Help"
+                    >
+                        ?
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="icon-button"
+                        aria-label="Notifications"
+                    >
+                        &#9679;
+                    </button>
+
+
+                    <div class="owner-avatar">
+                        O
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- CONTENT -->
+
+            <div class="page-content">
+
+                <!-- WELCOME -->
+
+                <section
+                    class="welcome-section"
+                    id="overview"
+                >
+
+                    <div>
+
+                        <span class="eyebrow">
+                            OWNER DASHBOARD
+                        </span>
+
+                        <h1>
+                            Welcome to BizFlow.
+                        </h1>
+
+                        <p id="welcomeMessage">
+                            Your workspace is ready.
+                            Add your first business to get started.
+                        </p>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="primary-button"
+                        id="addBusiness"
+                    >
+                        <span>&#9679;</span>
+                        Add Business
+                    </button>
+
+                </section>
+
+
+                <!-- STATS -->
+
+                <section class="stats-grid">
+
+                    <article class="stat-card">
+
+                        <div class="stat-top">
+                            <span>BUSINESSES</span>
+                            <div class="stat-icon">&#9632;</div>
+                        </div>
+
+                        <strong id="businessCount">
+                            0
+                        </strong>
+
+                        <small>
+                            No business added
+                        </small>
+
+                    </article>
+
+
+                    <article class="stat-card">
+
+                        <div class="stat-top">
+                            <span>REVENUE</span>
+                            <div class="stat-icon">&#8377;</div>
+                        </div>
+
+                        <strong>
+                            &#8377;0
+                        </strong>
+
+                        <small>
+                            No activity yet
+                        </small>
+
+                    </article>
+
+
+                    <article class="stat-card">
+
+                        <div class="stat-top">
+                            <span>CUSTOMERS</span>
+                            <div class="stat-icon">&#9670;</div>
+                        </div>
+
+                        <strong>
+                            0
+                        </strong>
+
+                        <small>
+                            No customers yet
+                        </small>
+
+                    </article>
+
+
+                    <article class="stat-card">
+
+                        <div class="stat-top">
+                            <span>ACTIVITY</span>
+                            <div class="stat-icon">&#9679;</div>
+                        </div>
+
+                        <strong>
+                            0
+                        </strong>
+
+                        <small>
+                            No activity yet
+                        </small>
+
+                    </article>
+
+                </section>
+
+
+                <!-- BUSINESS -->
+
+                <section
+                    class="workspace-card"
+                    id="business"
+                >
+
+                    <div class="section-header">
+
+                        <div>
+
+                            <span class="eyebrow">
+                                BUSINESS WORKSPACE
+                            </span>
+
+                            <h2 id="businessTitle">
+                                No business added yet
+                            </h2>
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            class="secondary-button"
+                            id="refreshBusinesses"
+                        >
+                             &#8635; Refresh
+                        </button>
+
+                    </div>
+
+
+                    <p
+                        class="section-description"
+                        id="businessDescription"
+                    >
+                        Create your first business.
+                        Your business will appear here after
+                        it is saved successfully.
+                    </p>
+
+
+                    <div
+                        id="businessList"
+                        class="business-list"
+                    >
+                    </div>
+
+
+                    <div class="empty-business">
+
+                        <div class="empty-icon">
+                            +
+                        </div>
+
+                        <strong>
+                            Start your BizFlow workspace
+                        </strong>
+
+                        <p>
+                            Add a business to unlock the
+                            management tools for your real business.
+                        </p>
+
+                        <button
+                            type="button"
+                            class="primary-button"
+                            id="addBusinessSecondary"
+                        >
+                             + Add Your Business
+                        </button>
+
+                    </div>
+
+                </section>
+
+
+                <!-- SERVICES -->
+
+                <section
+                    class="workspace-card service-management-card"
+                    id="services"
+                >
+
+                    <div class="section-header">
+
+                        <div>
+
+                            <span class="eyebrow">
+                                SERVICES
+                            </span>
+
+                            <h2>
+                                Service Management
+                            </h2>
+
+                            <p class="section-description">
+                                Create and manage services for your business.
+                            </p>
+
+                        </div>
+
+                        <span
+                            class="status-badge off"
+                            id="serviceStatusBadge"
+                        >
+                            NO BUSINESS
+                        </span>
+
+                    </div>
+
+
+                    <div class="service-business-selector">
+
+                        <label for="serviceBusinessSelect">
+                            Select Business
+                        </label>
+
+                        <div
+    class="bizflow-custom-dropdown service-business-dropdown"
+    data-select-id="serviceBusinessSelect"
+>
+
+    <select
+        id="serviceBusinessSelect"
+        class="service-input bizflow-native-select"
+        tabindex="-1"
+        aria-hidden="true"
+    >
+        <option value="">Select a business</option>
+    </select>
+
+    <button
+        type="button"
+        class="bizflow-dropdown-trigger"
+        aria-haspopup="listbox"
+        aria-expanded="false"
+    >
+        <span class="bizflow-dropdown-value is-placeholder">
+            Select a business
+        </span>
+
+        <span class="bizflow-dropdown-arrow">
+            <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+            >
+                <path
+                    d="M6 9l6 6 6-6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+            </svg>
+        </span>
+    </button>
+
+    <div
+        class="bizflow-dropdown-menu"
+        role="listbox"
+    ></div>
+                        <div class="service-business-status-row">
+
+                            <span class="service-business-status-label">
+                                Status
+                            </span>
+
+                            <div
+                                class="bizflow-custom-dropdown service-business-status-dropdown"
+                                data-select-id="serviceBusinessStatus"
+                            >
+
+                                <select
+                                    id="serviceBusinessStatus"
+                                    class="service-input bizflow-native-select"
+                                    tabindex="-1"
+                                    aria-hidden="true"
+                                >
+                                    <option value="active">
+                                        Active
+                                    </option>
+
+                                    <option value="inactive">
+                                        Inactive
+                                    </option>
+                                </select>
+
+                                <button
+                                    type="button"
+                                    class="bizflow-dropdown-trigger"
+                                    aria-haspopup="listbox"
+                                    aria-expanded="false"
+                                >
+
+                                    <span class="bizflow-dropdown-value">
+                                        Active
+                                    </span>
+
+                                    <span class="bizflow-dropdown-arrow">
+
+                                        <svg
+                                            viewBox="0 0 24 24"
+                                            aria-hidden="true"
+                                        >
+                                            <path
+                                                d="M6 9l6 6 6-6"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+
+                                    </span>
+
+                                </button>
+
+                                <div
+                                    class="bizflow-dropdown-menu"
+                                    role="listbox"
+                                ></div>
+
+                            </div>
+
+                        </div>
+
+</div>
+
+                    </div>
+
+
+                    <div
+                        class="service-management-grid"
+                        id="serviceManagementArea"
+                    >
+
+                        <div class="service-form-panel">
+
+                            <div class="service-panel-title">
+                                <span>ADD / EDIT SERVICE</span>
+                            </div>
+
+                            <form id="serviceForm">
+
+                                <input
+                                    type="hidden"
+                                    id="serviceId"
+                                >
+
+
+                                <label for="serviceName">
+                                    Service Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="serviceName"
+                                    class="service-input"
+                                    placeholder="Enter service name"
+                                    maxlength="120"
+                                    required
+                                >
+
+
+                                <label for="serviceCategory">
+                                    Category
+                                </label>
+
+                                <div class="bizflow-custom-dropdown service-category-dropdown" data-select-id="serviceCategory">
+
+    <select
+        id="serviceCategory"
+        class="service-input service-category-select bizflow-native-select"
+        tabindex="-1"
+        aria-hidden="true"
+    >
+        <option value="">Select category</option>
+        <option value="Hotel & Hospitality">Hotel & Hospitality</option>
+        <option value="Restaurant & Food Services">Restaurant & Food Services</option>
+        <option value="Grocery Store">Grocery Store</option>
+        <option value="Retail & Shopping">Retail & Shopping</option>
+        <option value="Healthcare & Medical">Healthcare & Medical</option>
+        <option value="Beauty & Salon">Beauty & Salon</option>
+        <option value="Fitness & Wellness">Fitness & Wellness</option>
+        <option value="Marketing & Advertising">Marketing & Advertising</option>
+        <option value="Home & Personal Services">Home & Personal Services</option>
+        <option value="Automotive Services">Automotive Services</option>
+    </select>
+
+    <button
+        type="button"
+        class="bizflow-dropdown-trigger"
+        aria-haspopup="listbox"
+        aria-expanded="false"
+    >
+        <span class="bizflow-dropdown-value is-placeholder">
+            Select category
+        </span>
+
+        <span class="bizflow-dropdown-arrow">
+            <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+            >
+                <path
+                    d="M6 9l6 6 6-6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+            </svg>
+        </span>
+    </button>
+
+    <div
+        class="bizflow-dropdown-menu"
+        role="listbox"
+    ></div>
+
+</div>
+
+
+                                <label for="serviceDescription">
+                                    Description
+                                </label>
+
+                                <textarea
+                                    id="serviceDescription"
+                                    class="service-input service-textarea"
+                                    placeholder="Describe this service"
+                                    maxlength="500"
+                                ></textarea>
+
+
+                                <div class="service-form-row">
+
+                                    <div>
+
+                                        <label for="servicePrice">
+                                            Price
+                                        </label>
+
+                                        <input
+                                            type="number"
+                                            id="servicePrice"
+                                            class="service-input"
+                                            min="0"
+                                            step="0.01"
+                                            placeholder="0"
+                                        >
+
+                                    </div>
+
+
+                                    <div>
+
+                                        <label for="serviceDuration">
+                                            Duration (minutes)
+                                        </label>
+
+                                        <input
+                                            type="number"
+                                            id="serviceDuration"
+                                            class="service-input"
+                                            min="0"
+                                            step="1"
+                                            placeholder="0"
+                                        >
+
+                                    </div>
+
+                                </div>
+
+
+                                <label for="serviceFormStatus">
+                                    Status
+                                </label>
+
+                                <div
+    class="bizflow-custom-dropdown service-form-status-dropdown"
+    data-select-id="serviceFormStatus"
+>
+
+    <select
+        id="serviceFormStatus"
+        class="service-input bizflow-native-select"
+        tabindex="-1"
+        aria-hidden="true"
+    >
+        <option value="active">Active</option>
+        <option value="inactive">Inactive</option>
+    </select>
+
+    <button
+        type="button"
+        class="bizflow-dropdown-trigger"
+        aria-haspopup="listbox"
+        aria-expanded="false"
+    >
+
+        <span class="bizflow-dropdown-value">
+            Active
+        </span>
+
+        <span class="bizflow-dropdown-arrow">
+
+            <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+            >
+                <path
+                    d="M6 9l6 6 6-6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+            </svg>
+
+        </span>
+
+    </button>
+
+    <div
+        class="bizflow-dropdown-menu"
+        role="listbox"
+    ></div>
+
+</div>
+
+
+                                <div class="service-form-actions">
+
+                                    <button
+                                        type="submit"
+                                        class="primary-button"
+                                        id="saveServiceButton"
+                                    >
+                                        Add Service
+                                    </button>
+
+                                    <button
+                                        type="button"
+                                        class="secondary-button hidden"
+                                        id="cancelServiceEdit"
+                                    >
+                                        Cancel Edit
+                                    </button>
+
+                                </div>
+
+                            </form>
+
+                        </div>
+
+
+                        <div class="service-list-panel">
+
+                            <div class="service-panel-heading">
+
+                                <div>
+                                    <span class="eyebrow">
+                                        YOUR SERVICES
+                                    </span>
+
+                                    <h3>
+                                        Services
+                                    </h3>
+                                </div>
+
+                                <strong id="serviceCount">
+                                    0
+                                </strong>
+
+                            </div>
+
+
+                            <div
+                                id="serviceList"
+                                class="service-list"
+                            >
+
+                                <div class="service-empty-state">
+                                    <div class="service-empty-icon">
+                                        +
+                                    </div>
+
+                                    <strong>
+                                        No services yet
+                                    </strong>
+
+                                    <p>
+                                        Select a business and add your first service.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- TWO CARDS -->
+
+                <section class="two-column-grid">
+
+                    <article
+                        class="workspace-card"
+                        id="website"
+                    >
+
+                        <div class="section-header">
+
+                            <div>
+
+                                <span class="eyebrow">
+                                    WEBSITE
+                                </span>
+
+                                <h2>
+                                    Customer Website
+                                </h2>
+
+                            </div>
+
+                            <span class="status-badge off">
+                                OFF
+                            </span>
+
+                        </div>
+
+
+                        <div class="inactive-panel">
+
+                            <strong>
+                                No website created
+                            </strong>
+
+                            <p>
+                                Website management becomes
+                                available after a business is created.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article
+                        class="workspace-card"
+                        id="payments"
+                    >
+
+                        <div class="section-header">
+
+                            <div>
+
+                                <span class="eyebrow">
+                                    PAYMENTS
+                                </span>
+
+                                <h2>
+                                    Payment System
+                                </h2>
+
+                            </div>
+
+                            <span class="status-badge off">
+                                OFF
+                            </span>
+
+                        </div>
+
+
+                        <div class="inactive-panel">
+
+                            <strong>
+                                No payment activity
+                            </strong>
+
+                            <p>
+                                Payment options will be configured
+                                for each business.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </section>
+
+
+                <!-- ACTIVITY -->
+
+                <section
+                    class="workspace-card"
+                    id="activity"
+                >
+
+                    <div class="section-header">
+
+                        <div>
+
+                            <span class="eyebrow">
+                                ACTIVITY
+                            </span>
+
+                            <h2>
+                                Recent Activity
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="no-activity">
+
+                        <div class="activity-icon">
+                             &#9679;
+                        </div>
+
+                        <strong>
+                            No activity yet
+                        </strong>
+
+                        <p>
+                            Orders, bookings, customers,
+                            payments and other real activity
+                            will appear here after they occur.
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+                <!-- SECURITY -->
+
+                <section
+                    class="security-card"
+                    id="security"
+                >
+
+                    <div class="security-icon">
+                         &#9679;
+                    </div>
+
+                    <div>
+
+                        <span class="eyebrow">
+                            SECURITY
+                        </span>
+
+                        <h2>
+                            Secure your BizFlow account
+                        </h2>
+
+                        <p>
+                            Authentication, permissions and
+                            owner security will be configured
+                            in the security layer.
+                        </p>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <!-- ADD BUSINESS MODAL -->
+
+    <div
+        class="modal hidden"
+        id="businessModal"
+    >
+
+        <div
+            class="modal-overlay"
+            id="modalOverlay"
+        >
+        </div>
+
+
+        <div
+            class="modal-card"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modalTitle"
+        >
+
+            <button
+                type="button"
+                class="modal-close"
+                id="closeBusinessModal"
+                aria-label="Close"
+            >
+                <span class="modal-close-icon">&times;</span>
+            </button>
+
+
+            <span class="eyebrow">
+                NEW BUSINESS
+            </span>
+
+
+            <h2 id="modalTitle">
+                Add your business
+            </h2>
+
+
+            <p class="modal-description">
+                Create a real business record.
+                It will be saved securely in your BizFlow database.
+            </p>
+
+
+            <form id="businessForm">
+
+                <label>
+                    Business Name
+
+                    <input
+                        type="text"
+                        id="businessName"
+                        name="name"
+                        maxlength="120"
+                        autocomplete="organization"
+                        placeholder="Enter business name"
+                        required
+                    >
+
+                </label>
+
+
+                <label>
+                    Business Type
+
+                    <div class="bizflow-custom-dropdown service-category-dropdown" data-select-id="businessType">
+
+    <select
+        id="businessType"
+        class="bizflow-native-select"
+        tabindex="-1"
+        aria-hidden="true"
+    >
+        <option value="">Select business type</option>
+        <option value="Hotel & Hospitality">Hotel & Hospitality</option>
+        <option value="Restaurant & Food Services">Restaurant & Food Services</option>
+        <option value="Grocery Store">Grocery Store</option>
+        <option value="Retail & Shopping">Retail & Shopping</option>
+        <option value="Healthcare & Medical">Healthcare & Medical</option>
+        <option value="Beauty & Salon">Beauty & Salon</option>
+        <option value="Fitness & Wellness">Fitness & Wellness</option>
+        <option value="Marketing & Advertising">Marketing & Advertising</option>
+        <option value="Home & Personal Services">Home & Personal Services</option>
+        <option value="Automotive Services">Automotive Services</option>
+    </select>
+
+    <button
+        type="button"
+        class="bizflow-dropdown-trigger"
+        aria-haspopup="listbox"
+        aria-expanded="false"
+    >
+        <span class="bizflow-dropdown-value">
+            Select business type
+        </span>
+
+        <span class="bizflow-dropdown-arrow">
+            <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+            >
+                <path
+                    d="M6 9l6 6 6-6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+            </svg>
+        </span>
+    </button>
+
+    <div
+        class="bizflow-dropdown-menu"
+        role="listbox"
+    ></div>
+
+</div>
+
+                </label>
+
+
+                <button
+                    type="submit"
+                    class="primary-button full-width"
+                    id="createBusiness"
+                >
+                    Create Business
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- BUSINESS MANAGEMENT MODAL -->
+
+    <div
+        class="modal hidden"
+        id="manageBusinessModal"
+    >
+
+        <div
+            class="modal-overlay"
+            id="manageBusinessOverlay"
+        >
+        </div>
+
+
+        <div
+            class="modal-card"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="manageBusinessTitle"
+        >
+
+            <button
+                type="button"
+                class="modal-close"
+                id="closeManageBusinessModal"
+                aria-label="Close"
+            >
+                &times;
+            </button>
+
+
+            <span class="eyebrow">
+                BUSINESS MANAGEMENT
+            </span>
+
+
+            <h2 id="manageBusinessTitle">
+                Manage Business
+            </h2>
+
+
+            <p class="modal-description">
+                Update your business information and status.
+            </p>
+
+
+            <form id="manageBusinessForm">
+
+                <label>
+                    Business Name
+
+                    <input
+                        type="text"
+                        id="manageBusinessName"
+                        maxlength="120"
+                        required
+                    >
+
+                </label>
+
+
+                <label>
+                    Business Type
+
+                    <div class="bizflow-custom-dropdown service-category-dropdown" data-select-id="manageBusinessType">
+
+    <select
+        id="manageBusinessType"
+        class="bizflow-native-select"
+        tabindex="-1"
+        aria-hidden="true"
+        required
+    >
+        <option value="">Select business type</option>
+        <option value="Hotel & Hospitality">Hotel & Hospitality</option>
+        <option value="Restaurant & Food Services">Restaurant & Food Services</option>
+        <option value="Grocery Store">Grocery Store</option>
+        <option value="Retail & Shopping">Retail & Shopping</option>
+        <option value="Healthcare & Medical">Healthcare & Medical</option>
+        <option value="Beauty & Salon">Beauty & Salon</option>
+        <option value="Fitness & Wellness">Fitness & Wellness</option>
+        <option value="Marketing & Advertising">Marketing & Advertising</option>
+        <option value="Home & Personal Services">Home & Personal Services</option>
+        <option value="Automotive Services">Automotive Services</option>
+    </select>
+
+    <button
+        type="button"
+        class="bizflow-dropdown-trigger"
+        aria-haspopup="listbox"
+        aria-expanded="false"
+    >
+        <span class="bizflow-dropdown-value">
+            Select business type
+        </span>
+
+        <span class="bizflow-dropdown-arrow">
+            <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+            >
+                <path
+                    d="M6 9l6 6 6-6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+            </svg>
+        </span>
+    </button>
+
+    <div
+        class="bizflow-dropdown-menu"
+        role="listbox"
+    ></div>
+
+</div>
+
+                </label>
+
+
+                <label>
+    Status
+
+    <div
+        class="bizflow-custom-dropdown manage-business-status-dropdown"
+        data-select-id="manageBusinessStatus"
+    >
+
+        <select
+            id="manageBusinessStatus"
+            class="service-input bizflow-native-select"
+            tabindex="-1"
+            aria-hidden="true"
+        >
+            <option value="active">
+                Active
+            </option>
+
+            <option value="inactive">
+                Inactive
+            </option>
+        </select>
+
+        <button
+            type="button"
+            class="bizflow-dropdown-trigger"
+            aria-haspopup="listbox"
+            aria-expanded="false"
+        >
+            <span class="bizflow-dropdown-value">
+                Active
+            </span>
+
+            <span class="bizflow-dropdown-arrow">
+                <svg
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                >
+                    <path
+                        d="M6 9l6 6 6-6"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                </svg>
+            </span>
+        </button>
+
+        <div
+            class="bizflow-dropdown-menu"
+            role="listbox"
+        ></div>
+
+    </div>
+</label>
+
+
+                <!-- CUSTOMER WEBSITE -->
+
+                <div class="business-website-settings">
+
+                    <div class="website-settings-heading">
+                        <div>
+                            <span class="eyebrow">
+                                CUSTOMER WEBSITE
+                            </span>
+
+                            <h3>
+                                Website
+                            </h3>
+
+                            <p>
+                                Control whether customers can access this business website.
+                            </p>
+                        </div>
+
+                        <span
+                            class="status-badge off"
+                            id="manageWebsiteStatus"
+                        >
+                            OFF
+                        </span>
+                    </div>
+
+                    <div class="website-setting-row">
+                        <div>
+                            <strong>Website Status</strong>
+                            <span>Turn the customer website ON or OFF.</span>
+                        </div>
+
+                        <label class="website-toggle">
+                            <input
+                                type="checkbox"
+                                id="manageWebsiteEnabled"
+                            >
+                            <span class="website-toggle-slider"></span>
+                        </label>
+                    </div>
+
+                    <div class="website-setting-row">
+                        <div>
+                            <strong>Website Visibility</strong>
+                            <span>Hide the website without deleting it.</span>
+                        </div>
+
+                        <label class="website-toggle">
+                            <input
+                                type="checkbox"
+                                id="manageWebsiteHidden"
+                            >
+                            <span class="website-toggle-slider"></span>
+                        </label>
+                    </div>
+
+                    <button
+                        type="button"
+                        class="secondary-button full-width"
+                        id="visitBusinessWebsite"
+                    >
+                        Visit Website
+                    </button>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="primary-button full-width"
+                    id="saveBusinessChanges"
+                >
+                    Save Changes
+                </button>
+
+
+                <button
+                    type="button"
+                    class="danger-button full-width"
+                    id="deleteBusiness"
+                >
+                    Delete Business
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- OWNER LOGIN SCREEN -->
+
+    <div
+        class="login-screen"
+        id="loginScreen"
+        aria-hidden="true"
+    >
+
+        <div class="login-card">
+
+            <div class="login-brand">
+                <div class="login-brand-mark">B</div>
+                <div>
+                    <strong>BizFlow</strong>
+                    <span>Owner Platform</span>
+                </div>
+            </div>
+
+            <div class="login-heading">
+                <h1>Owner Sign In</h1>
+                <p>Sign in to manage your business workspace.</p>
+            </div>
+
+            <form id="loginForm" novalidate>
+
+                <div class="login-field">
+                    <label for="loginEmail">Email Address</label>
+                    <input
+                        type="email"
+                        id="loginEmail"
+                        name="email"
+                        autocomplete="username"
+                        placeholder="owner@bizflow.com"
+                        required
+                    >
+                </div>
+
+                <div class="login-field">
+                    <label for="loginPassword">Password</label>
+                    <input
+                        type="password"
+                        id="loginPassword"
+                        name="password"
+                        autocomplete="current-password"
+                        placeholder="Enter your password"
+                        required
+                    >
+                </div>
+
+                <div
+                    class="login-error"
+                    id="loginError"
+                    role="alert"
+                    aria-live="polite"
+                ></div>
+
+                <button
+                    type="submit"
+                    class="login-button"
+                    id="loginButton"
+                >
+                    <span id="loginButtonText">Sign In</span>
+                </button>
+
+            </form>
+
+            <div class="login-security-note">
+                <span>&#9679;</span>
+                <span>Secure owner authentication</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- TOAST -->
+
+    <div
+        class="toast"
+        id="toast"
+        role="status"
+        aria-live="polite"
+    >
+    </div>
+
+
+    <script src="/admin/dashboard.js"></script>
+
+</body>
+
+</html>
+
+

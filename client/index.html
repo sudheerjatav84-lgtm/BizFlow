@@ -1,0 +1,311 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Business website powered by BizFlow"
+    >
+
+    <title>Business Website</title>
+
+    <link
+        rel="stylesheet"
+        href="/style.css"
+    >
+</head>
+
+<body>
+
+    <!-- =====================================================
+         CUSTOMER WEBSITE
+    ====================================================== -->
+
+    <div id="websiteApp">
+
+        <!-- HEADER -->
+        <header class="site-header">
+
+            <div class="container header-inner">
+
+                <a
+                    href="/"
+                    class="brand"
+                    id="businessBrand"
+                >
+                    BizFlow Business
+                </a>
+
+                <nav class="site-nav">
+
+                    <a href="#home">
+                        Home
+                    </a>
+
+                    <a href="#about">
+                        About
+                    </a>
+
+                    <a href="#contact">
+                        Contact
+                    </a>
+
+                </nav>
+
+            </div>
+
+        </header>
+
+
+        <!-- MAIN -->
+        <main>
+
+            <!-- HERO -->
+            <section
+                class="hero"
+                id="home"
+            >
+
+                <div class="container hero-content">
+
+                    <span class="eyebrow">
+                        WELCOME
+                    </span>
+
+                    <h1 id="businessName">
+                        Your Business
+                    </h1>
+
+                    <p id="businessType">
+                        Professional Business
+                    </p>
+
+                    <p class="hero-description">
+                        Welcome to our official customer website.
+                        More information and services will appear here
+                        as the business is configured.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a
+                            href="#contact"
+                            class="primary-button"
+                        >
+                            Contact Us
+                        </a>
+
+                        <a
+                            href="#about"
+                            class="secondary-button"
+                        >
+                            Learn More
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ABOUT -->
+            <section
+                class="content-section"
+                id="about"
+            >
+
+                <div class="container">
+
+                    <div class="section-heading">
+
+                        <span class="eyebrow">
+                            ABOUT
+                        </span>
+
+                        <h2>
+                            About Our Business
+                        </h2>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <p>
+                            This business website is managed through
+                            BizFlow. Business information, services,
+                            website visibility and other settings can
+                            be controlled securely by the owner.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- SERVICES -->
+            <section
+                class="content-section services-section"
+                id="services"
+            >
+
+                <div class="container">
+
+                    <div class="section-heading">
+
+                        <span class="eyebrow">
+                            SERVICES
+                        </span>
+
+                        <h2>
+                            Our Services
+                        </h2>
+
+                        <p>
+                            Services will appear here when configured
+                            by the business owner.
+                        </p>
+
+                    </div>
+
+                    <div
+                        class="empty-card"
+                        id="servicesEmpty"
+                    >
+
+                        <div class="empty-icon">
+                            +
+                        </div>
+
+                        <h3>
+                            No services available yet
+                        </h3>
+
+                        <p>
+                            Please check back later.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- CONTACT -->
+            <section
+                class="content-section"
+                id="contact"
+            >
+
+                <div class="container">
+
+                    <div class="section-heading">
+
+                        <span class="eyebrow">
+                            CONTACT
+                        </span>
+
+                        <h2>
+                            Get In Touch
+                        </h2>
+
+                    </div>
+
+                    <div class="contact-grid">
+
+                        <div class="info-card">
+
+                            <span class="card-label">
+                                BUSINESS
+                            </span>
+
+                            <strong id="contactBusinessName">
+                                Your Business
+                            </strong>
+
+                        </div>
+
+                        <div class="info-card">
+
+                            <span class="card-label">
+                                TYPE
+                            </span>
+
+                            <strong id="contactBusinessType">
+                                Professional Business
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <!-- FOOTER -->
+        <footer class="site-footer">
+
+            <div class="container footer-inner">
+
+                <span id="footerBusinessName">
+                    Your Business
+                </span>
+
+                <span>
+                    Powered by BizFlow
+                </span>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+
+    <!-- WEBSITE UNAVAILABLE -->
+    <div
+        id="websiteUnavailable"
+        class="website-message hidden"
+    >
+
+        <div class="message-card">
+
+            <div class="message-icon">
+                !
+            </div>
+
+            <span class="eyebrow">
+                WEBSITE UNAVAILABLE
+            </span>
+
+            <h1>
+                This website is currently unavailable.
+            </h1>
+
+            <p id="unavailableMessage">
+                The business owner has not enabled the customer
+                website yet.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script src="/script.js"></script>
+
+</body>
+</html>
