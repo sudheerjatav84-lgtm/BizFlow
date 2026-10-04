@@ -26,3 +26,6 @@ Thumbs.db
 # Local project backups
 BizFlow-Backup-Before-SaaS/
 *.working-*
+
+# Local large dashboard backup
+admin/dashboard.js.local-backup-before-github-fix
